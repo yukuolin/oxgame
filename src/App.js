@@ -31,11 +31,13 @@ function App() {
 
   return (
     <div className="app">
-      {status}
-      <div className="board">
-        {Array(9)
-          .fill()
-          .map((_, index) => renderSquare(index))}
+      <div className="center-content">
+        {status}
+        <div className="board">
+          {Array(9)
+            .fill()
+            .map((_, index) => renderSquare(index))}
+        </div>
       </div>
     </div>
   );
